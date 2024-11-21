@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на занятие</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html" class="to_main"><img src="C:\Project\img\LogoWay.svg" alt="logo-LogoWay"></a>
+            <img src="C:\Project\img\underlineMainTitle.svg" alt="underline">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__navigation">
+                <li class="navigation__panel"><a class="header__panel-link" href="index.html">Главная</a></li>
+                <li class="navigation__panel"><a class="header__panel-link" href="ListOfSpecialists.html">Список
+                        спеицалистов</a></li>
+            </ul>
+        </nav>
+        <button class="header__logIn">Войти</button>
+        <button class="header__signUp">Зарегистрироваться</button>
+    </header>
+    <main class="signUpForClass">
+        <section class="signUpForClass__title">
+            <h1>Запись на занятие</h1>
+            <img src="C:\Project\img\underlineSignUpForClass.svg" alt="underline">
+        </section>
+        <form action="#" method="post" name="signUpForClass">
+            <label class="signUpForClass__info" for="name_specialist">ФИО специалиста</label>
+            <select id="name_specialist" name="name_specialist" required>
+                <option value="">Выберите специалиста</option>
+                <option value="Sokolova"> Соколова Анна Владимировна</option>
+                <option value="Fedorova">Федорова Елизавета Андреевна</option>
+                <option value="Novikova">Новикова Александра Ивановна</option>
+                <option value="Volkova">Волкова Наталья Сергеевна</option>
+                <option value="Smirnov">Смирнов Виктор Михайлович</option>
+            </select>
+            <label class="signUpForClass__info" for="name_parent">ФИО родителя</label>
+            <input type="text" class="name_parent" id="name_parent" name="name_parent" placeholder="Пожалуйста, введите свои данные" required>
+            <label class="signUpForClass__info" for="name_child">ФИО ребенка</label>
+            <input type="text" class="name_child" id="name_child" name="name_child" placeholder="Пожалуйста, введите данные ребенка" required>
+            <label class="signUpForClass__info" for="phoneNumber">Номер телефона</label>
+            <input type="tel" class="phoneNumber" id="phoneNumber" name="phoneNumber" placeholder="Пожалуйста, введите номер телефона" required>
+            <label class="signUpForClass__info" for="data_class">Дата занятия</label>
+            <input type="date" class="data_class" id="data_class" name="data_class" required>
+            <label class="signUpForClass__info" for="time_class">Время занятия</label>
+            <input type="time" class="time_class" id="time_class" name="time_class" required>
+        </form>
+        <button class="signUpForClass__button">Записаться на занятие</button>
+    </main>
+    <footer></footer>
+</body>
+</html>

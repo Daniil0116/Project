@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html" class="to_main"><img src="C:\Project\img\LogoWay.svg" alt="logo-LogoWay"></a>
+            <img src="C:\Project\img\underlineMainTitle.svg" alt="underline">
+        </div>
+    </header>
+    <main>
+        <section class="LogUp__form">
+            <h1 class="form__title">Регистрация</h1>
+            <form action="index.html" method="post" name="LogUp" id="LogUp">
+                <label for="form__surname" class="form__subtitle">Имя</label>
+                <input type="text" class="form__surname" id="form__surname" name="form__surname" required>
+                <label for="form__name" class="form__subtitle">Фамилия</label>
+                <input type="text" class="form__name" id="form__name" name="form__name" required>
+                <label for="form__patronymic" class="form__subtitle">Отчество</label>
+                <input type="text" class="form__patronymic" id="form__patronymic" name="form__patronymic">
+                <label for="form__email" class="form__subtitle">Email</label>
+                <input type="email" class="form__email" id="form__email" name="form__email" required>
+                <label for="form__pass" class="form__subtitle">Пароль</label>
+                <input type="password" class="form__pass" id="form__pass" name="form__pass" required>
+                <button type="submit" class="form__button" form="LogUp">Зарегистрироваться</button>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
