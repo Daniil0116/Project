@@ -9,32 +9,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style_signUpForClass/style.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header__logo">
-            <a href="index.html" class="to_main"><img src="C:\Project\img\LogoWay.svg" alt="logo-LogoWay"></a>
-            <img src="C:\Project\img\underlineMainTitle.svg" alt="underline">
+            <a href="index.html" class="logo-link"><img src="./img/LogoWay.svg" alt="logo-logo-way" width="171"
+                    height="45"></a>
+            <img src="./img/underlineMainTitle.svg" alt="underline" width="246" height="32">
         </div>
-        <nav class="header__nav">
-            <ul class="header__navigation">
-                <li class="navigation__panel"><a class="header__panel-link" href="index.html">Главная</a></li>
-                <li class="navigation__panel"><a class="header__panel-link" href="ListOfSpecialists.html">Список
+        <nav class="header__navigation">
+            <ul class="navigation__list">
+                <li class="list__item"><a class="item__link" href="index.html">Главная</a></li>
+                <li class="list__item"><a class="item__link" href="ListOfSpecialists.html">Список
                         спеицалистов</a></li>
             </ul>
         </nav>
-        <button class="header__logIn">Войти</button>
-        <button class="header__signUp">Зарегистрироваться</button>
+        <form action="LogIn.html"><button class="header__log-in">Войти</button></form>
+        <form action="SignUp.html"><button class="header__sign-up">Зарегистрироваться</button></form>
     </header>
-    <main class="signUpForClass">
-        <section class="signUpForClass__title">
-            <h1>Запись на занятие</h1>
-            <img src="C:\Project\img\underlineSignUpForClass.svg" alt="underline">
+    <main class="main">
+        <section class="main__title">
+            <h1 class="title__text">Запись на занятие</h1>
+            <img src="./img/underlineSignUpForClass.svg" alt="underline" width="575" height="35" class="title__underline">
         </section>
-        <form action="#" method="post" name="signUpForClass">
-            <label class="signUpForClass__info" for="name_specialist">ФИО специалиста</label>
-            <select id="name_specialist" name="name_specialist" required>
+        <form action="#" method="post" name="main__form" class="main__form">
+            <select id="name-specialist" name="name-specialist" class="form__name-specialist" required>
                 <option value="">Выберите специалиста</option>
                 <option value="Sokolova"> Соколова Анна Владимировна</option>
                 <option value="Fedorova">Федорова Елизавета Андреевна</option>
@@ -42,19 +44,32 @@
                 <option value="Volkova">Волкова Наталья Сергеевна</option>
                 <option value="Smirnov">Смирнов Виктор Михайлович</option>
             </select>
-            <label class="signUpForClass__info" for="name_parent">ФИО родителя</label>
-            <input type="text" class="name_parent" id="name_parent" name="name_parent" placeholder="Пожалуйста, введите свои данные" required>
-            <label class="signUpForClass__info" for="name_child">ФИО ребенка</label>
-            <input type="text" class="name_child" id="name_child" name="name_child" placeholder="Пожалуйста, введите данные ребенка" required>
-            <label class="signUpForClass__info" for="phoneNumber">Номер телефона</label>
-            <input type="tel" class="phoneNumber" id="phoneNumber" name="phoneNumber" placeholder="Пожалуйста, введите номер телефона" required>
-            <label class="signUpForClass__info" for="data_class">Дата занятия</label>
-            <input type="date" class="data_class" id="data_class" name="data_class" required>
-            <label class="signUpForClass__info" for="time_class">Время занятия</label>
-            <input type="time" class="time_class" id="time_class" name="time_class" required>
+            <label class="form__info" for="name-specialist">ФИО специалиста</label>
+            <input type="text" class="form__name-parent" id="name-parent" name="name-parent"
+                placeholder="Пожалуйста, введите свои данные" required>
+            <label class="form__info" for="name-parent">ФИО родителя</label>
+            <input type="text" class="form__name-child" id="name-child" name="name-child"
+                placeholder="Пожалуйста, введите данные ребенка" required>
+            <label class="form__info" for="name-child">ФИО ребенка</label>
+            <input type="tel" class="form__phone-number" id="phone-number" name="phone-number"
+                placeholder="Пожалуйста, введите номер телефона" required>
+            <label class="form__info" for="phone-number">Номер телефона</label>
+            <input type="date" class="form__data-class" id="data-class" name="data-class" required>
+            <label class="form__info" for="data-class">Дата занятия</label>
+            <input type="time" class="form__time-class" id="time-class" name="time-class" required>
+            <label class="form__info" for="time-class">Время занятия</label>
+            <button class="main__button" form="main__form">Записаться на занятие</button>
         </form>
-        <button class="signUpForClass__button">Записаться на занятие</button>
     </main>
-    <footer></footer>
+    <footer class="footer container">
+        <section class="footer__contacts">
+            <h3 class="contacts__title">Наши контакты</h3>
+            <p class="contacts__text">Адрес: Йошкар-Ола</p>
+            <p class="contacts__text">Телефон: <a href="tel:89341678105">89341678105</a></p>
+            <p class="contacts__text">Email: <a href="mailto:LogoWay@mail.ru">LogoWay@mail.ru</a></p>
+        </section>
+        <p class="footer__text">Создатели: Яруллина А. Р. и Вахромеева А. Д.</p>
+    </footer>
 </body>
+
 </html>

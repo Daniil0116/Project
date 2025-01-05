@@ -1,0 +1,183 @@
+.container {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.main__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+}
+
+.title__text {
+    margin-bottom: 1%;
+}
+
+.main__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2%;
+    padding: 2%;
+}
+
+.content__photo {
+    width: 18%;
+}
+
+.content__text {
+    max-width: 80%;
+}
+
+.main__list-of-techniques {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-of-techniques__title {
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.main__sertificate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sertificate__title {
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.sertificate__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.sertificate__photo {
+    max-width: 30%;
+    max-height: 300px;
+}
+
+.main__price {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price__title {
+    margin-bottom: 2px;
+}
+
+.sign-up-for-class__button {
+    border: none;
+    text-align: center;
+    width: 120%;
+    padding: 15%;
+    font-weight: 600;
+    background-color: rgb(250, 172, 171);
+    border: 2px solid black;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.sign-up-for-class__button:hover {
+    background-color: rgb(241, 160, 159);
+}
+
+.main__contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contacts__title {
+    margin-bottom: 1px;
+}
+
+.information__soc-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+}
+
+@media screen and (max-width: 1024px) {
+    .title__text {
+        font-size: 18px;
+        margin-bottom: 2px;
+    }
+
+    .title__underline {
+        max-width: 450px;
+    }
+
+    .main__title {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        font-size: 14px;
+    }
+
+    .information__information-icons {
+        max-width: 30px;
+    }
+
+    .list-of-techniques__title {
+        font-size: 16px;
+    }
+
+    .list-of-techniques__underline {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .main__content {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        font-size: 12px;
+    }
+}

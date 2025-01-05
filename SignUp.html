@@ -9,33 +9,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style_SignUp/style.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header container">
         <div class="header__logo">
-            <a href="index.html" class="to_main"><img src="C:\Project\img\LogoWay.svg" alt="logo-LogoWay"></a>
-            <img src="C:\Project\img\underlineMainTitle.svg" alt="underline">
+            <a href="index.html" class="logo-link"><img src="./img/LogoWay.svg" alt="logo-Logo-lay" width="260" height="45"></a>
+            <img src="./img/underlineMainTitle.svg" alt="underline" width="320" height="32">
         </div>
     </header>
-    <main>
-        <section class="LogUp__form">
+    <main class="main container">
+        <section class="main__form">
             <h1 class="form__title">Регистрация</h1>
-            <form action="index.html" method="post" name="LogUp" id="LogUp">
-                <label for="form__surname" class="form__subtitle">Имя</label>
-                <input type="text" class="form__surname" id="form__surname" name="form__surname" required>
-                <label for="form__name" class="form__subtitle">Фамилия</label>
-                <input type="text" class="form__name" id="form__name" name="form__name" required>
-                <label for="form__patronymic" class="form__subtitle">Отчество</label>
-                <input type="text" class="form__patronymic" id="form__patronymic" name="form__patronymic">
-                <label for="form__email" class="form__subtitle">Email</label>
-                <input type="email" class="form__email" id="form__email" name="form__email" required>
-                <label for="form__pass" class="form__subtitle">Пароль</label>
-                <input type="password" class="form__pass" id="form__pass" name="form__pass" required>
-                <button type="submit" class="form__button" form="LogUp">Зарегистрироваться</button>
+            <form action="index.html" method="post" name="sign-up" id="sign-up" class="form__sign-up">
+                <input type="text" class="sign-up__surname" id="sign-up__surname" name="sign-up__surname" required>
+                <label for="sign-up__surname" class="sign-up__subtitle">Имя</label>
+                <input type="text" class="sign-up__name" id="sign-up__name" name="sign-up__name" required>
+                <label for="sign-up__name" class="sign-up__subtitle">Фамилия</label>
+                <input type="text" class="sign-up__patronymic" id="sign-up__patronymic" name="sign-up__patronymic">
+                <label for="sign-up__patronymic" class="sign-up__subtitle">Отчество</label>
+                <input type="email" class="sign-up__email" id="sign-up__email" name="sign-up__email" required>
+                <label for="sign-up__email" class="sign-up__subtitle">Email</label>
+                <input type="password" class="sign-up__pass" id="sign-up__pass" name="sign-up__pass" required>
+                <label for="sign-up__pass" class="sign-up__subtitle">Пароль</label>
+                <button type="submit" class="sign-up__button" form="sign-up">Зарегистрироваться</button>
             </form>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer container">
+        <section class="footer__contacts">
+            <h3 class="contacts__title">Наши контакты</h3>
+            <p class="contacts__text">Адрес: Йошкар-Ола</p>
+            <p class="contacts__text">Телефон: <a href="tel:89341678105">89341678105</a></p>
+            <p class="contacts__text">Email: <a href="mailto:LogoWay@mail.ru">LogoWay@mail.ru</a></p>
+        </section>
+        <p class="footer__text">Создатели: Яруллина А. Р. и Вахромеева А. Д.</p>
+    </footer>
 </body>
+
 </html>

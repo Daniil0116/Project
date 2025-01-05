@@ -1,0 +1,16 @@
+.footer {
+    width: 100%;
+    background-color: #ffa8a7;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.footer__contacts {
+    margin-right: 130px;
+}

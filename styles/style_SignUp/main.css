@@ -1,0 +1,97 @@
+.container {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.main__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 30%;
+  background-color: rgba(255, 210, 209, 1);
+  border-radius: 5px;
+  margin-top: 4%;
+  margin-bottom: 10%;
+}
+
+.form__sign-up {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+input {
+  width: 70%;
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  background-color: rgba(255, 210, 209, 1);
+  padding: 10px;
+  margin-top: 8%;
+  outline: none;
+  border-radius: 2px;
+}
+
+input::placeholder {
+  color: #212529;
+  opacity: 0.4;
+  text-align: center;
+}
+
+input:focus {
+  outline: 2px solid rgb(241, 160, 159);
+}
+
+.sign-up__button {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: rgb(250, 172, 171);
+  border: none;
+  padding: 4%;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.sign-up__button:hover {
+  background-color: rgb(241, 160, 159);
+}
+
+@media screen and (max-width: 1024px) {
+  .main__form {
+    width: 40%;
+  } 
+}
+
+@media screen and (max-width: 930px) {
+  .main__form {
+    width: 50%;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .main__form {
+    width: 60%;
+  } 
+}

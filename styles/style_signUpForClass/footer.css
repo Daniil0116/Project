@@ -1,0 +1,17 @@
+footer {
+    width: 100%;
+    background-color: rgba(255, 168, 167, 1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.footer__contacts {
+    margin-right: 130px;
+}
