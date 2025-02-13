@@ -18,13 +18,13 @@
     cursor: pointer;
 }
 
-.navigation__list {
+.navigation {
     display: flex;
     flex-direction: row;
     list-style: none;
 }
 
-.item__link {
+.navigation__link {
     text-decoration: none;
     color: black;
     margin-right: 30px;
@@ -83,7 +83,7 @@
         margin-right: 20px;
     }
 
-    .item__link {
+    .navigation__link {
         margin-right: 20px;
     }
 
@@ -141,7 +141,7 @@
         max-width: 125px;
     }
 
-    .item__link {
+    .navigation__link {
         font-size: 15px;
     }
 }
@@ -155,7 +155,7 @@
         max-width: 123px;
     }
 
-    .item__link {
+    .navigation__link {
         font-size: 14px;
     }
 
@@ -177,7 +177,7 @@
         max-width: 122px;
     }
 
-    .item__link {
+    .navigation__link {
         font-size: 13px;
     }
 

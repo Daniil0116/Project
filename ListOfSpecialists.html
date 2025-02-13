@@ -16,35 +16,34 @@
     <header class="header container">
         <div class="header__logo">
             <a href="index.html" class="logo-link"><img src="./img/LogoWay.svg" alt="logo-logo-way" width="171"
-                    height="45"></a>
-            <img src="./img/underlineMainTitle.svg" alt="underline" width="246" height="32">
+                    height="45" class="logo-img"></a>
+            <img src="./img/underlineMainTitle.svg" alt="underline" width="246" height="32" class="logo-underline">
         </div>
         <nav class="header__navigation">
-            <ul class="navigation__list">
-                <li class="list__item"><a class="item__link" href="index.html">Главная</a></li>
-                <li class="list__item"><a class="item__link" href="signUpForClass.html">Запись на
+            <ul class="navigation">
+                <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="signUpForClass.html">Запись на
                         занятие</a></li>
-                <li class="list__item"><a class="item__link" href="ListOfSpecialists.html">Список
-                        спеицалистов</a></li>
             </ul>
         </nav>
         <form action="LogIn.html"><button class="header__log-in">Войти</button></form>
         <form action="SignUp.html"><button class="header__sign-up">Зарегистрироваться</button></form>
     </header>
     <main class="main container">
-        <section class="main__specialists">
+        <section class="specialists">
             <h1 class="specialists__title">Специалисты</h1>
-            <img src="./img/underlineSpecialists.svg" alt="underline" width="537" height="35" class="specialists__underline">
+            <img src="./img/underlineSpecialists.svg" alt="underline" width="537" height="35"
+                class="specialists__underline">
         </section>
-        <div class="main__block-list-of-specialists">
-            <a href="SpecialistPage.html" class="block-list-of-specialists__person">
-                <article class="block-list-of-specialists__person">
-                    <img src="./img/logoped_1.jpg" alt="logoped_1" class="person__photo" width="150" height="150">
-                    <div class="person__characteristic">
-                        <p class="characteristic__text">Соколова Анна Владимировна.</p>
-                        <p class="characteristic__text">Стаж работы 6 лет.</p>
-                        <p class="characteristic__text">Работа направлена на:</p>
-                        <ul class="characteristic__list">
+        <div class="block-list-of-specialists">
+            <a href="SpecialistPage.html" class="person-block">
+                <article class="person-block">
+                    <img src="./img/logoped_1.jpg" alt="logoped_1" class="person-block__photo" width="150" height="150">
+                    <div class="person-block__characteristic">
+                        <p class="person-text">Соколова Анна Владимировна.</p>
+                        <p class="person-text">Стаж работы 6 лет.</p>
+                        <p class="person-text">Работа направлена на:</p>
+                        <ul class="list">
                             <li class="list__item">коррекция звукопроизношения (постановка, автоматизация и
                                 дифференциация звуков речи);</li>
                             <li class="list__item">улучшение дикции и произношения;</li>
@@ -54,14 +53,14 @@
                     </div>
                 </article>
             </a>
-            <a href="#" class="block-list-of-specialists__person">
-                <article class="block-list-of-specialists__person">
-                    <img src="./img/logoped_2.jpg" alt="logoped_2" class="person__photo" width="150" height="150">
-                    <div class="person__characteristic">
-                        <p class="characteristic__text">Федорова Елизавета Андреевна.</p>
-                        <p class="characteristic__text">Стаж работы 9 лет.</p>
-                        <p class="characteristic__text">Работа направлена на:</p>
-                        <ul class="characteristic__list">
+            <a href="#" class="person-block">
+                <article class="person-block">
+                    <img src="./img/logoped_2.jpg" alt="logoped_2" class="person-block__photo" width="150" height="150">
+                    <div class="person-block__characteristic">
+                        <p class="person-text">Федорова Елизавета Андреевна.</p>
+                        <p class="person-text">Стаж работы 9 лет.</p>
+                        <p class="person-text">Работа направлена на:</p>
+                        <ul class="list">
                             <li class="list__item">коррекция звукопроизношения (постановка, автоматизация и
                                 дифференциация звуков речи);</li>
                             <li class="list__item">улучшение дикции и произношения;</li>
@@ -71,14 +70,14 @@
                     </div>
                 </article>
             </a>
-            <a href="#" class="block-list-of-specialists__person">
-                <article class="block-list-of-specialists__person">
-                    <img src="./img/logoped_3.jpg" alt="logoped_3" class="person__photo" width="150" height="150">
-                    <div class="person__characteristic">
-                        <p class="characteristic__text">Новикова Александра Ивановна.</p>
-                        <p class="characteristic__text">Стаж работы 4 года.</p>
-                        <p class="characteristic__text">Работа направлена на:</p>
-                        <ul class="characteristic__list">
+            <a href="#" class="person-block">
+                <article class="person-block">
+                    <img src="./img/logoped_3.jpg" alt="logoped_3" class="person-block__photo" width="150" height="150">
+                    <div class="person-block__characteristic">
+                        <p class="person-text">Новикова Александра Ивановна.</p>
+                        <p class="person-text">Стаж работы 4 года.</p>
+                        <p class="person-text">Работа направлена на:</p>
+                        <ul class="list">
                             <li class="list__item">коррекция звукопроизношения (постановка, автоматизация и
                                 дифференциация звуков речи);</li>
                             <li class="list__item">улучшение дикции и произношения;</li>
@@ -88,14 +87,14 @@
                     </div>
                 </article>
             </a>
-            <a href="#" class="block-list-of-specialists__person">
-                <article class="block-list-of-specialists__person">
-                    <img src="./img/logoped_4.jpg" alt="logoped_4" class="person__photo" width="150" height="150">
-                    <div class="person__characteristic">
-                        <p class="characteristic__text">Волкова Наталья Сергеевна.</p>
-                        <p class="characteristic__text">Стаж работы 20 лет.</p>
-                        <p class="characteristic__text">Работа направлена на:</p>
-                        <ul class="characteristic__list">
+            <a href="#" class="person-block">
+                <article class="person-block">
+                    <img src="./img/logoped_4.jpg" alt="logoped_4" class="person-block__photo" width="150" height="150">
+                    <div class="person-block__characteristic">
+                        <p class="person-text">Волкова Наталья Сергеевна.</p>
+                        <p class="person-text">Стаж работы 20 лет.</p>
+                        <p class="person-text">Работа направлена на:</p>
+                        <ul class="list">
                             <li class="list__item">коррекция звукопроизношения (постановка, автоматизация и
                                 дифференциация звуков речи);</li>
                             <li class="list__item">улучшение дикции и произношения;</li>
@@ -109,14 +108,14 @@
                     </div>
                 </article>
             </a>
-            <a href="#" class="block-list-of-specialists__person">
-                <article class="block-list-of-specialists__person">
-                    <img src="./img/logoped_5.jpg" alt="logoped_5" class="person__photo" width="150" height="150">
-                    <div class="person__characteristic">
-                        <p class="characteristic__text">Смирнов Виктор Михайлович.</p>
-                        <p class="characteristic__text">Стаж работы 18 лет.</p>
-                        <p class="characteristic__text">Работа направлена на:</p>
-                        <ul class="characteristic__list">
+            <a href="#" class="person-block">
+                <article class="person-block">
+                    <img src="./img/logoped_5.jpg" alt="logoped_5" class="person-block__photo" width="150" height="150">
+                    <div class="person-block__characteristic">
+                        <p class="person-text">Смирнов Виктор Михайлович.</p>
+                        <p class="person-text">Стаж работы 18 лет.</p>
+                        <p class="person-text">Работа направлена на:</p>
+                        <ul class="list">
                             <li class="list__item"> коррекция звукопроизношения (постановка, автоматизация и
                                 дифференциация звуков речи);</li>
                             <li class="list__item">улучшение дикции и произношения;</li>
@@ -132,10 +131,10 @@
     </main>
     <footer class="footer container">
         <section class="footer__contacts">
-            <h3 class="contacts__title">Наши контакты</h3>
-            <p class="contacts__text">Адрес: Йошкар-Ола</p>
-            <p class="contacts__text">Телефон: <a href="tel:89341678105">89341678105</a></p>
-            <p class="contacts__text">Email: <a href="mailto:LogoWay@mail.ru">LogoWay@mail.ru</a></p>
+            <h2 class="footer__title">Наши контакты</h3>
+            <p class="footer__text">Адрес: Йошкар-Ола</p>
+            <p class="footer__text">Телефон: <a href="tel:89341678105" class="phone-number">89341678105</a></p>
+            <p class="footer__text">Email: <a href="mailto:LogoWay@mail.ru" class="mail">LogoWay@mail.ru</a></p>
         </section>
         <p class="footer__text">Создатели: Яруллина А. Р. и Вахромеева А. Д.</p>
     </footer>

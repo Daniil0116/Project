@@ -24,7 +24,7 @@
   margin-bottom: 5%;
 }
 
-.main__form {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +34,7 @@
   border-radius: 5px;
 }
 
-.form__log-in {
+.log-in {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

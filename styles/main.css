@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-.main__list-of-services {
+.services {
     max-width: 97%;
     display: flex;
     align-items: center;
@@ -11,14 +11,14 @@
     margin-top: 50px;
 }
 
-.list-of-services__title {
+.services__title {
     font-size: 40px;
     font-weight: 600;
     margin: 0;
     margin-bottom: 11px;
 }
 
-.main__list-of-specialists {
+.specialists {
     max-width: 97%;
     display: flex;
     align-items: center;
@@ -26,14 +26,14 @@
     margin-top: 50px;
 }
 
-.list-of-specialists__title {
+.specialists__title {
     font-size: 40px;
     font-weight: 600;
     margin: 0;
     margin-bottom: 9px;
 }
 
-.list-of-specialists__content {
+.specialists__content {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -41,7 +41,7 @@
     margin-top: 15px;
 }
 
-.content__block-link {
+.person-block-link {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -49,23 +49,23 @@
     transition: background-color 0.4s ease-in-out;
 }
 
-.content__block-link:hover {
+.person-block-link:hover {
     background-color: rgba(255, 168, 167, 0.695);
 }
 
-.content__block {
+.person-block {
     display: flex;
     align-items: center;
 }
 
-.block__block-photo {
+.person-block__block-photo {
     width: 150px;
     height: 150px;
     border-radius: 15px;
     margin-right: 5px;
 }
 
-.block__block-description {
+.person-block__block-description {
     font-weight: 700;
     color: black;
 }
@@ -86,7 +86,7 @@
     overflow-x: auto;
 }
 
-.main__reviews {
+.reviews {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +105,7 @@
     justify-content: center;
 }
 
-.list__container {
+.review-container {
     max-width: 25%;
     display: flex;
     flex-direction: column;
@@ -113,11 +113,11 @@
     margin-right: 2%;
 }
 
-.container__text {
+.review-text {
     font-size: 14px;
 }
 
-.main__questions{
+.questions{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,7 +138,7 @@
     align-items: center;
 }
 
-.form__field {
+.form-field {
     border: none;
     border-style: solid;
     border-color: rgba(255, 168, 167, 1);
@@ -151,7 +151,7 @@
     gap: 10px;
 }
 
-.buttons-block__buttons {
+.questions-buttons {
     border: none;
     padding: 15px;
     border-radius: 7px;
@@ -162,26 +162,26 @@
     transition: background-color 0.4s ease-in-out;
 }
 
-.buttons-block__buttons:hover {
+.questions-buttons:hover {
     background-color: rgb(227, 148, 147);
 }
 
 @media screen and (max-width: 1024px) {
-    .list-of-services__title {
+    .services__title {
         font-size: 30px;
         margin-bottom: 2px;
     }
 
-    .list-of-service__underline {
+    .service__underline {
         width: 260px;
     }
 
-    .list-of-specialists__title {
+    .specialists__title {
         font-size: 30px;
         margin-bottom: 2px;
     }
 
-    .list-of-specialists__underline {
+    .specialists__underline {
         max-width: 600px;
     }
 
@@ -207,21 +207,21 @@
         font-size: 12px;
     }
 
-    .list-of-services__title {
+    .services__title {
         font-size: 20px;
         margin-bottom: 0;
     }
 
-    .list-of-service__underline {
+    .service__underline {
         width: 210px;
     }
 
-    .list-of-specialists__title {
+    .specialists__title {
         font-size: 20px;
         margin-bottom: 2px;
     }
 
-    .list-of-specialists__underline {
+    .specialists__underline {
         max-width: 420px;
     }
 
@@ -243,11 +243,11 @@
         max-width: 400px;
     }
 
-    .buttons-block__buttons {
+    .questions-buttons {
         padding: 10px;
     }
 
-    .block__block-photo {
+    .person-block__block-photo {
         max-width: 110px;
         max-height: 110px;
     }

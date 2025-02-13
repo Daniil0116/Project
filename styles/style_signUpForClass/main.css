@@ -1,4 +1,4 @@
-.main__title {
+.title {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -15,7 +15,7 @@
     margin-bottom: 10%;
 }
 
-.main__form {
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +47,7 @@ input:focus {
     outline: 2px solid rgb(241, 160, 159);
 }
 
-.main__button {
+.button {
     margin-top: 10%;
     background-color: rgb(250, 172, 171);
     border: none;
@@ -58,7 +58,7 @@ input:focus {
     transition: background-color 0.4s ease-in-out;
 }
 
-.main__button:hover {
+.button:hover {
     background-color: rgb(241, 160, 159);
 }
 
@@ -83,7 +83,7 @@ select {
         max-width: 500px;
     }
 
-    .main__form {
+    .form {
         width: 43%;
     }
 }
@@ -97,7 +97,7 @@ select {
         max-width: 470px;
     }
 
-    .main__form {
+    .form {
         width: 44%;
     }
 }
@@ -111,7 +111,7 @@ select {
         max-width: 450px;
     }
 
-    .main__form {
+    .form {
         width: 46%;
     }
 }
@@ -125,7 +125,7 @@ select {
         max-width: 400px;
     }
 
-    .main__form {
+    .form {
         width: 42%;
     }
 
