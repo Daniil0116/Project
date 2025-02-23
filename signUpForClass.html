@@ -35,7 +35,7 @@
             <h1 class="title__text">Запись на занятие</h1>
             <img src="./img/underlineSignUpForClass.svg" alt="underline" width="575" height="35" class="title__underline">
         </section>
-        <form action="#" method="post" name="main__form" class="form">
+        <form action="index.html" method="post" name="main__form" id="main__form" class="form">
             <select id="name-specialist" name="name-specialist" class="form__name-specialist" required>
                 <option value="">Выберите специалиста</option>
                 <option value="Sokolova"> Соколова Анна Владимировна</option>
@@ -58,7 +58,7 @@
             <label class="form__info" for="data-class">Дата занятия</label>
             <input type="time" class="form__time-class" id="time-class" name="time-class" required>
             <label class="form__info" for="time-class">Время занятия</label>
-            <button class="button" form="main__form">Записаться на занятие</button>
+            <button class="button" form="main__form" type="submit">Записаться на занятие</button>
         </form>
     </main>
     <footer class="footer container">

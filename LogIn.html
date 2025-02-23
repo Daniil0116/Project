@@ -24,11 +24,13 @@
         <section class="form">
             <h1 class="form__title">Вход</h1>
             <form action="index.html" method="post" name="log-in" id="log-in" class="log-in">
-                <input type="email" class="log-in__email" id="log-in__email" name="log-in__email" required
+                <input type="email" class="log-in__email" id="log-in__email" name="log-in__email"
                     placeholder="Введите логин">
-                <input type="password" class="log-in__pass" id="log-in__pass" name="log-in__pass" required
+                    <p class="log-in__email-error">Вы не ввели логин</p>
+                <input type="password" class="log-in__pass" id="log-in__pass" name="log-in__pass"
                     placeholder="Введите пароль">
-                <button type="submit" class="log-in__button" form="log-in">Войти</button>
+                    <p class="log-in__pass-error">Вы не ввели пароль</p>
+                <button type="submit" class="log-in__button" id="log-in__button" form="log-in">Войти</button>
             </form>
         </section>
     </main>
@@ -41,6 +43,7 @@
         </section>
         <p class="footer__text">Создатели: Яруллина А. Р. и Вахромеева А. Д.</p>
     </footer>
+    <script src="scripts/LogIn.js"></script>
 </body>
 
 </html>

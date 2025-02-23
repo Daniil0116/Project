@@ -117,7 +117,7 @@
     font-size: 14px;
 }
 
-.questions{
+.questions {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,6 +144,14 @@
     border-color: rgba(255, 168, 167, 1);
     margin-bottom: 2%;
     border-radius: 5px;
+}
+
+.form-field-error {
+    display: none;
+    background-color: rgb(252, 115, 113);
+    color: rgb(218, 14, 14);
+    padding: 2%;
+    border-radius: 30px;
 }
 
 .questions__buttons-block {

@@ -78,6 +78,14 @@ input:focus {
   background-color: rgb(241, 160, 159);
 }
 
+.sign-up__error {
+  display: none;
+  background-color: rgb(252, 115, 113);
+  color: rgb(218, 14, 14);
+  padding: 2%;
+  border-radius: 30px;
+}
+
 @media screen and (max-width: 1024px) {
   .form {
     width: 40%;

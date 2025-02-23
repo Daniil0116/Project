@@ -78,3 +78,19 @@ input:focus {
 .log-in__button:hover {
   background-color: rgb(241, 160, 159);
 }
+
+.log-in__email-error {
+  display: none;
+  background-color: rgb(252, 115, 113);
+  color: rgb(218, 14, 14);
+  padding: 2%;
+  border-radius: 30px;
+}
+
+.log-in__pass-error {
+  display: none;
+  background-color: rgb(252, 115, 113);
+  color: rgb(218, 14, 14);
+  padding: 2%;
+  border-radius: 30px;
+}

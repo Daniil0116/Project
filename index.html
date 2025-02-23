@@ -118,10 +118,11 @@
             <h4 class="questions__title">Ответим на ваши вопросы</h4>
             <img src="./img/underlinelistOfSpecialists.svg" alt="underline" width="620" height="35" class="questions__underline">
             <form method="post" action="#" id="questions" name="questions" class="questions__form">
-                <textarea id="questions" name="questions" rows="5" cols="33" class="form-field"></textarea>
+                <textarea id="form-field" name="form-field" rows="5" cols="33" class="form-field"></textarea>
+                <p class="form-field-error">Вы не написали никакого вопроса</p>
                 <div class="questions__buttons-block">
                     <button type="reset" form="questions" class="questions-buttons">Очистить</button>
-                    <button type="submit" form="questions" class="questions-buttons">Отправить</button>
+                    <button type="submit" form="questions" class="questions-buttons" id="questions-buttons">Отправить</button>
                 </div>
             </form>
         </section>
