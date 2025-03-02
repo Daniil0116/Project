@@ -1,6 +1,6 @@
 'use strict'
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
 
     //5. Сообщения пользователю в форме входа
     const button = document.getElementById('log-in__button');
@@ -35,5 +35,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    console.log("Проверка подключения файла скриптов")
+    console.log('Проверка подключения файла скриптов')
 });

@@ -30,12 +30,13 @@
             </ul>
         </nav>
         <form action="LogIn.html"><button class="header__log-in">Войти</button></form>
-        <form action="SignUp.html"><button class="header__sign-up">Зарегистрироваться</button></form>
+        <form action="SignUp.html"><button class="header__sign-up">Зарегистрироваться</button></form> 
     </header>
     <main class="main container">
         <section class="services">
             <h1 class="services__title">Список услуг</h1>
-            <img src="./img/underlinelistOfServices.svg" alt="underline" width="288" height="24" class="services__underline">
+            <img src="./img/underlinelistOfServices.svg" alt="underline" width="288" height="24"
+                class="services__underline">
             <div class="services__content">
                 <p class="text">✓ Запуск и стимуляция речи, развитие словарного запаса;</p>
                 <p class="text">✓ Коррекция звукопроизношения и слоговой структуры слова;</p>
@@ -51,78 +52,67 @@
 
             </div>
         </section>
-        <section class="specialists">
+        <section class="specialists" id="specialists">
             <h2 class="specialists__title">Список лучших специалистов</h2>
-            <img src="./img/underlinelistOfSpecialists.svg" alt="underline" width="711" height="35" class="specialists__underline">
+            <img src="./img/underlinelistOfSpecialists.svg" alt="underline" width="711" height="35"
+                class="specialists__underline">
             <div class="specialists__content">
                 <a href="#" class="person-block-link">
                     <article class="person-block">
                         <img src="./img/logoped_4.jpg" alt="logoped_4" width="250" height="250"
                             class="person-block__block-photo">
-                        <p class="person-block__block-description">
-                            Волкова Наталья Сергеевна. Стаж работы 20 лет.
-                        </p>
+                        <p class="person-block__block-description">1 специалист</p>
                     </article>
                 </a>
                 <a href="#" class="person-block-link">
                     <article class="person-block">
                         <img src="./img/logoped_5.jpg" alt="logoped_5" width="250" height="250"
                             class="person-block__block-photo">
-                        <p class="person-block__block-description">Смирнов Виктор Михайлович. Стаж
-                            работы
-                            18 лет.</p>
+                        <p class="person-block__block-description">2 специалист</p>
                     </article>
                 </a>
                 <a href="SpecialistPage.html" class="person-block-link">
                     <article class="person-block">
                         <img src="./img/logoped_1.jpg" alt="logoped_1" width="250" height="250"
                             class="person-block__block-photo">
-                        <p class="person-block__block-description">Соколова Анна Владимировна. Стаж
-                            работы
-                            6 лет.</p>
+                        <p class="person-block__block-description">3 специалист</p>
                     </article>
                 </a>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <h3 class="reviews__title">Отзывы</h3>
-            <img src="./img/underlinelistOfSpecialists.svg" alt="underline" width="320" height="55" class="reviews__underline">
+            <img src="./img/underlinelistOfSpecialists.svg" alt="underline" width="320" height="55"
+                class="reviews__underline">
             <div class="reviews__list">
                 <div class="review-container">
                     <img src="./img/ava-user.jpg" alt="avatar" width="30" height="30" class="review-img">
-                    <p class="review-text">Марина Белова</p>
-                    <p class="review-text">Я очень довольна работой логопеда в этом центре. Мой сын значительно
-                        улучшил
-                        свою речь за короткий
-                        срок. Специалист подошёл к занятиям с большой заботой и вниманием. Рекомендуем!</p>
+                    <p class="review-author">1 автор</p>
+                    <p class="review-text">1 отзыв</p>
                 </div>
                 <div class="review-container">
                     <img src="./img/ava-user.jpg" alt="avatar" width="30" height="30" class="review-img">
-                    <p class="review-text">Светлана Ковалёва</p>
-                    <p class="review-text">Спасибо всем сотрудникам за помощь нашей дочери. После курса занятий
-                        мы заметили огромный прогресс. Обязательно вернемся для дальнейшей работы.
-                    </p>
+                    <p class="review-author">2 автор</p>
+                    <p class="review-text">2 отзыв</p>
                 </div>
                 <div class="review-container">
                     <img src="./img/ava-user.jpg" alt="avatar" width="30" height="30" class="review-img">
-                    <p class="review-text">Елена Федорова</p>
-                    <p class="review-text">Меня впечатлила высокая квалификация специалистов. Здесь работают
-                        настоящие
-                        профессионалы своего дела, у которых большой опыт. Занятия проходят в игровой форме, что очень
-                        подходит для детей. Спасибо за вашу работу!
-                    </p>
+                    <p class="review-author">3 автор</p>
+                    <p class="review-text">3 отзыв</p>
                 </div>
             </div>
         </section>
         <section class="questions">
             <h4 class="questions__title">Ответим на ваши вопросы</h4>
-            <img src="./img/underlinelistOfSpecialists.svg" alt="underline" width="620" height="35" class="questions__underline">
+            <img src="./img/underlinelistOfSpecialists.svg" alt="underline" width="620" height="35"
+                class="questions__underline">
             <form method="post" action="#" id="questions" name="questions" class="questions__form">
                 <textarea id="form-field" name="form-field" rows="5" cols="33" class="form-field"></textarea>
                 <p class="form-field-error">Вы не написали никакого вопроса</p>
                 <div class="questions__buttons-block">
                     <button type="reset" form="questions" class="questions-buttons">Очистить</button>
-                    <button type="submit" form="questions" class="questions-buttons" id="questions-buttons">Отправить</button>
+                    <button type="submit" form="questions" class="questions-buttons"
+                        id="questions-buttons">Отправить</button>
                 </div>
             </form>
         </section>
@@ -136,7 +126,8 @@
         </section>
         <p class="footer__text">Создатели: Яруллина А. Р. и Вахромеева А. Д.</p>
     </footer>
-    
+
+    <button class="scroll-up"><img src="./img/scroll-up.png" alt="scroll-up" class="scroll-up-img"></button>
     <script src="scripts/script.js"></script>
 </body>
 

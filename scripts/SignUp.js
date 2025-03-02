@@ -1,6 +1,6 @@
 'use strict'
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
 
     //5. Сообщения пользователю в форме регистрации
 
