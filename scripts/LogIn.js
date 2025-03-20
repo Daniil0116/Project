@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 error_email.style.display = 'none'; 
                 error_pass.style.display = 'none';
+                alert("Ваши данные отправляются на сервер!");
                 form.submit();
             }
         });

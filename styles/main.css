@@ -183,11 +183,157 @@
     right: 50px;
     bottom: 10px;
     z-index: 10;
-    
+
 }
 
 .scroll-up:hover {
     cursor: pointer;
+}
+
+.content {
+    display: none;
+}
+
+.preloader {
+    padding-top: 25%;
+    background: #fefefb;
+    transition: opacity 0.5s ease;
+    text-align: center;
+}
+
+.loader {
+    width: 100%;
+    height: 5px;
+    background-color: #f3f3f3;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 168, 167, 1); 
+    animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+.loading-text {
+    margin-top: 10px; 
+    font-size: 20px; 
+    color: black
+}
+
+.swiper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.allSpecialists--slider {
+    padding: 60px 30px;
+}
+
+.allSpecialists__title {
+    margin: 0;
+}
+
+.allSpecialists__underline {
+    margin-bottom: 20px;
+}
+
+.allSpecialists__list {
+    display: grid;
+    grid-template-columns: repeat(4, 278px);
+    gap: 29px;
+}
+
+.allSpecialists__list--slider {
+    display: flex;
+    gap: 0;
+    margin-top: 0;
+}
+
+.allSpecialists__item {
+    position: relative;
+    top: 0;
+
+    padding: 24px;
+
+    text-decoration: none;
+
+    border-radius: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 16px 72px 0 rgba(34, 39, 47, 0.05);
+
+    will-change: top;
+    transition: top 0.2s linear;
+}
+
+.allSpecialists__item:hover {
+    top: 10px;
+}
+
+.allSpecialists__photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 180px;
+    height: 180px;
+    margin-bottom: 24px;
+
+    line-height: 30px;
+
+    border-radius: 12px;
+    background-color: rgba(255, 168, 167, 1);
+}
+
+.photo__img {
+    width: 150px;
+    height: 150px;
+}
+
+.allSpecialists__text {
+    margin-bottom: 5px;
+
+    font-size: 22px;
+    font-weight: 700;
+    color: #25292d;
+}
+
+.swiper-slide {
+    box-shadow: none;
+    border: 1px solid #ebeaea;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: rgba(255, 168, 167, 1);
+}
+
+.swiper-pagination-bullet-active {
+    background: rgba(255, 168, 167, 1);
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
 }
 
 @media screen and (max-width: 1024px) {

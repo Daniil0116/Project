@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const button = document.getElementById('sign-up__button');
 
     if (button) {
+        const form = document.getElementById('sign-up')
         const error = document.querySelector('.sign-up__error');
         const surname = document.getElementById('sign-up__surname');
         const name = document.getElementById('sign-up__name');
@@ -22,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.style.marginTop = '4%'
             } else {
                 error.style.display = 'none';
+                alert("Регистрация прошла успешно!");
+                window.localStorage.setItem("login", email.value);
                 form.submit();
             }
 

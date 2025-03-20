@@ -1,0 +1,26 @@
+[
+    {
+        "link": "#",
+        "photo": "./img/logoped_4.jpg",
+        "alt": "logoped_4",
+        "width": "250",
+        "height": "250",
+        "description": "Волкова Наталья Сергеевна. Стаж работы 20 лет."
+    },
+    {
+        "link": "#",
+        "photo": "./img/logoped_5.jpg",
+        "alt": "logoped_5",
+        "width": "250",
+        "height": "250",
+        "description": "Смирнов Виктор Михайлович. Стаж работы 18 лет."
+    },
+    {
+        "link": "SpecialistPage.html",
+        "photo": "./img/logoped_1.jpg",
+        "alt": "logoped_1",
+        "width": "250",
+        "height": "250",
+        "description": "Соколова Анна Владимировна. Стаж работы 6 лет."
+    }
+]

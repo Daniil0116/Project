@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Логопедия</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap" rel="stylesheet">
@@ -14,50 +15,95 @@
 </head>
 
 <body>
-    <header class="header container">
-        <div class="header__logo">
-            <a href="index.html" class="logo-link"><img src="./img/LogoWay.svg" alt="logo-logo-way" width="171"
-                    height="45" class="logo-img"></a>
-            <img src="./img/underlineMainTitle.svg" alt="underline" width="246" height="32" class="logo-underline">
-        </div>
-        <nav class="header__navigation">
-            <ul class="navigation">
-                <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="signUpForClass.html">Запись на
-                        занятие</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="ListOfSpecialists.html">Список
-                        специалистов</a></li>
-            </ul>
-        </nav>
-        <form action="LogIn.html"><button class="header__log-in">Войти</button></form>
-        <form action="SignUp.html"><button class="header__sign-up">Зарегистрироваться</button></form> 
-    </header>
-    <main class="main container">
-        <section class="services">
-            <h1 class="services__title">Список услуг</h1>
-            <img src="./img/underlinelistOfServices.svg" alt="underline" width="288" height="24"
-                class="services__underline">
-            <div class="services__content">
-                <p class="text">✓ Запуск и стимуляция речи, развитие словарного запаса;</p>
-                <p class="text">✓ Коррекция звукопроизношения и слоговой структуры слова;</p>
-                <p class="text">✓ Коррекционная работа с детьми с задержками, нарушением темпа и ритма речи;
-                </p>
-                <p class="text">✓ Повышение общей речевой активности;</p>
-                <p class="text">✓ Развитие фонематического слуха;</p>
-                <p class="text">✓ Коррекция недостатков письменной речи;</p>
-                <p class="text">✓ Развитие коммуникативных способностей детей;</p>
-                <p class="text">✓ Дидактические игры;</p>
-                <p class="text">✓ Психологическая диагностика;</p>
-                <p class="text">✓ Коррекционные и развивающие занятия.</p>
-
+    <div class="preloader">
+        <div class="loader"></div>
+        <p class="loading-text">Загрузка...</p>
+    </div>
+    <div class="content">
+        <header class="header container">
+            <div class="header__logo">
+                <a href="index.html" class="logo-link"><img src="./img/LogoWay.svg" alt="logo-logo-way" width="171"
+                        height="45" class="logo-img"></a>
+                <img src="./img/underlineMainTitle.svg" alt="underline" width="246" height="32" class="logo-underline">
             </div>
-        </section>
-        <section class="specialists" id="specialists">
-            <h2 class="specialists__title">Список лучших специалистов</h2>
-            <img src="./img/underlinelistOfSpecialists.svg" alt="underline" width="711" height="35"
-                class="specialists__underline">
-            <div class="specialists__content">
-                <a href="#" class="person-block-link">
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="signUpForClass.html">Запись на
+                            занятие</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="ListOfSpecialists.html">Список
+                            специалистов</a></li>
+                </ul>
+            </nav>
+            <form action="LogIn.html"><button class="header__log-in">Войти</button></form>
+            <form action="SignUp.html"><button class="header__sign-up">Зарегистрироваться</button></form>
+        </header>
+        <main class="main container">
+            <section class="section allSpecialists allSpecialists--slider swiper">
+                <h1 class="allSpecialists__title">Наши специалисты</h1>
+                <img src="./img/underlineSpecialists.svg" alt="underline" width="537" height="35"
+                    class="allSpecialists__underline">
+                <div class="allSpecialists__list allSpecialists__list--slider swiper-wrapper">
+                    <a class="allSpecialists__item swiper-slide" href="#">
+                        <span class="allSpecialists__photo">
+                            <img src="./img/logoped_1.jpg" alt="photo" width="150" height="150" class="photo__img">
+                        </span>
+                        <h3 class="allSpecialists__text">Соколова А. В.</h3>
+                    </a>
+                    <a class="allSpecialists__item swiper-slide" href="#">
+                        <span class="allSpecialists__photo">
+                            <img src="./img/logoped_2.jpg" alt="photo" width="150px" height="150px" class="photo__img">
+                        </span>
+                        <h3 class="allSpecialists__text">Федорова Е. А.</h3>
+                    </a>
+                    <a class="allSpecialists__item swiper-slide" href="#">
+                        <span class="allSpecialists__photo">
+                            <img src="./img/logoped_3.jpg" alt="photo" width="80" height="80" class="photo__img">
+                        </span>
+                        <h3 class="allSpecialists__text">Новикова А. И.</h3>
+                    </a>
+                    <a class="allSpecialists__item swiper-slide" href="#">
+                        <span class="allSpecialists__photo">
+                            <img src="./img/logoped_4.jpg" alt="photo" width="80" height="80" class="photo__img">
+                        </span>
+                        <h3 class="allSpecialists__text">Волкова Н. С.</h3>
+                    </a>
+                    <a class="allSpecialists__item swiper-slide" href="#">
+                        <span class="allSpecialists__photo">
+                            <img src="./img/logoped_5.jpg" alt="photo" width="80" height="80" class="photo__img">
+                        </span>
+                        <h3 class="allSpecialists__text">Смирнов В. М.</h3>
+                    </a>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </section>
+            <section class="services">
+                <h2 class="services__title">Список услуг</h1>
+                <img src="./img/underlinelistOfServices.svg" alt="underline" width="288" height="24"
+                    class="services__underline">
+                <div class="services__content">
+                    <p class="text">✓ Запуск и стимуляция речи, развитие словарного запаса;</p>
+                    <p class="text">✓ Коррекция звукопроизношения и слоговой структуры слова;</p>
+                    <p class="text">✓ Коррекционная работа с детьми с задержками, нарушением темпа и ритма речи;
+                    </p>
+                    <p class="text">✓ Повышение общей речевой активности;</p>
+                    <p class="text">✓ Развитие фонематического слуха;</p>
+                    <p class="text">✓ Коррекция недостатков письменной речи;</p>
+                    <p class="text">✓ Развитие коммуникативных способностей детей;</p>
+                    <p class="text">✓ Дидактические игры;</p>
+                    <p class="text">✓ Психологическая диагностика;</p>
+                    <p class="text">✓ Коррекционные и развивающие занятия.</p>
+
+                </div>
+            </section>
+            <section class="specialists" id="specialists">
+                <h3 class="specialists__title">Список лучших специалистов</h2>
+                <img src="./img/underlinelistOfSpecialists.svg" alt="underline" width="711" height="35"
+                    class="specialists__underline">
+                <div class="specialists__content">
+                    <!-- <a href="#" class="person-block-link">
                     <article class="person-block">
                         <img src="./img/logoped_4.jpg" alt="logoped_4" width="250" height="250"
                             class="person-block__block-photo">
@@ -77,57 +123,59 @@
                             class="person-block__block-photo">
                         <p class="person-block__block-description">3 специалист</p>
                     </article>
-                </a>
-            </div>
-        </section>
-        <section class="reviews" id="reviews">
-            <h3 class="reviews__title">Отзывы</h3>
-            <img src="./img/underlinelistOfSpecialists.svg" alt="underline" width="320" height="55"
-                class="reviews__underline">
-            <div class="reviews__list">
-                <div class="review-container">
-                    <img src="./img/ava-user.jpg" alt="avatar" width="30" height="30" class="review-img">
-                    <p class="review-author">1 автор</p>
-                    <p class="review-text">1 отзыв</p>
+                </a> -->
                 </div>
-                <div class="review-container">
-                    <img src="./img/ava-user.jpg" alt="avatar" width="30" height="30" class="review-img">
-                    <p class="review-author">2 автор</p>
-                    <p class="review-text">2 отзыв</p>
+            </section>
+            <section class="reviews" id="reviews">
+                <h4 class="reviews__title">Отзывы</h3>
+                <img src="./img/underlinelistOfSpecialists.svg" alt="underline" width="320" height="55"
+                    class="reviews__underline">
+                <div class="reviews__list">
+                    <div class="review-container">
+                        <img src="./img/ava-user.jpg" alt="avatar" width="30" height="30" class="review-img">
+                        <p class="review-author">1 автор</p>
+                        <p class="review-text">1 отзыв</p>
+                    </div>
+                    <div class="review-container">
+                        <img src="./img/ava-user.jpg" alt="avatar" width="30" height="30" class="review-img">
+                        <p class="review-author">2 автор</p>
+                        <p class="review-text">2 отзыв</p>
+                    </div>
+                    <div class="review-container">
+                        <img src="./img/ava-user.jpg" alt="avatar" width="30" height="30" class="review-img">
+                        <p class="review-author">3 автор</p>
+                        <p class="review-text">3 отзыв</p>
+                    </div>
                 </div>
-                <div class="review-container">
-                    <img src="./img/ava-user.jpg" alt="avatar" width="30" height="30" class="review-img">
-                    <p class="review-author">3 автор</p>
-                    <p class="review-text">3 отзыв</p>
-                </div>
-            </div>
-        </section>
-        <section class="questions">
-            <h4 class="questions__title">Ответим на ваши вопросы</h4>
-            <img src="./img/underlinelistOfSpecialists.svg" alt="underline" width="620" height="35"
-                class="questions__underline">
-            <form method="post" action="#" id="questions" name="questions" class="questions__form">
-                <textarea id="form-field" name="form-field" rows="5" cols="33" class="form-field"></textarea>
-                <p class="form-field-error">Вы не написали никакого вопроса</p>
-                <div class="questions__buttons-block">
-                    <button type="reset" form="questions" class="questions-buttons">Очистить</button>
-                    <button type="submit" form="questions" class="questions-buttons"
-                        id="questions-buttons">Отправить</button>
-                </div>
-            </form>
-        </section>
-    </main>
-    <footer class="footer container">
-        <section class="footer__contacts">
-            <h3 class="footer__title">Наши контакты</h3>
-            <p class="footer__text">Адрес: Йошкар-Ола</p>
-            <p class="footer__text">Телефон: <a href="tel:89341678105" class="phone-number">89341678105</a></p>
-            <p class="footer__text">Email: <a href="mailto:LogoWay@mail.ru" class="mail">LogoWay@mail.ru</a></p>
-        </section>
-        <p class="footer__text">Создатели: Яруллина А. Р. и Вахромеева А. Д.</p>
-    </footer>
+            </section>
+            <section class="questions">
+                <h5 class="questions__title">Ответим на ваши вопросы</h4>
+                <img src="./img/underlinelistOfSpecialists.svg" alt="underline" width="620" height="35"
+                    class="questions__underline">
+                <form method="post" action="#" id="questions" name="questions" class="questions__form">
+                    <textarea id="form-field" name="form-field" rows="5" cols="33" class="form-field"></textarea>
+                    <p class="form-field-error">Вы не написали никакого вопроса</p>
+                    <div class="questions__buttons-block">
+                        <button type="reset" form="questions" class="questions-buttons">Очистить</button>
+                        <button type="submit" form="questions" class="questions-buttons"
+                            id="questions-buttons">Отправить</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer class="footer container">
+            <section class="footer__contacts">
+                <h6 class="footer__title">Наши контакты</h3>
+                <p class="footer__text">Адрес: Йошкар-Ола</p>
+                <p class="footer__text">Телефон: <a href="tel:89341678105" class="phone-number">89341678105</a></p>
+                <p class="footer__text">Email: <a href="mailto:LogoWay@mail.ru" class="mail">LogoWay@mail.ru</a></p>
+            </section>
+            <p class="footer__text">Создатели: Яруллина А. Р. и Вахромеева А. Д.</p>
+        </footer>
 
-    <button class="scroll-up"><img src="./img/scroll-up.png" alt="scroll-up" class="scroll-up-img"></button>
+        <button class="scroll-up"><img src="./img/scroll-up.png" alt="scroll-up" class="scroll-up-img"></button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 
